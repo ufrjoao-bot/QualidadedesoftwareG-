@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Simples</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+
+<div class="container" id="loginBox">
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="E-mail" />
+  <input type="password" id="senha" placeholder="Senha" />
+  <div id="erro" class="erro"></div>
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div class="container hidden" id="painel">
+  <h2>Área Restrita</h2>
+  <p>Bem-vindo!</p>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
